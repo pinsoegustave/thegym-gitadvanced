@@ -348,3 +348,29 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --graph
 | | | 
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+## Challenge 10(Understanding Reflogs <Bonus>);
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reflog
+394c1fe (HEAD -> master) HEAD@{0}: commit: Part 1 Challenge 9
+90799b6 HEAD@{1}: commit: Part 1 Challenge 8
+3b2b55f HEAD@{2}: cherry-pick: Implemented test 5
+7eb4c3f HEAD@{3}: checkout: moving from ft/branch to master
+32f9ccc (ft/branch) HEAD@{4}: commit: Implemented test 5
+7eb4c3f HEAD@{5}: checkout: moving from master to ft/branch
+7eb4c3f HEAD@{6}: commit: Part 1 Challenge 7
+a70b082 (origin/master, origin/HEAD) HEAD@{7}: rebase (finish): returning to refs/heads/master
+a70b082 (origin/master, origin/HEAD) HEAD@{8}: rebase (start): checkout refs/remotes/origin/master
+a70b082 (origin/master, origin/HEAD) HEAD@{9}: commit (merge): Merge commit '0215c352'
+6481c5f HEAD@{10}: checkout: moving from 0215c352d201ac8924f6b1997c0a8835cdfd0f2f to master
+0215c35 HEAD@{11}: checkout: moving from master to 0215c35
+6481c5f HEAD@{12}: checkout: moving from 6481c5f8f471b33ce09ac5eec49af4e759868097 to master
+6481c5f HEAD@{13}: checkout: moving from master to 6481c5f8f471b33ce09ac5eec49af4e759868097
+6481c5f HEAD@{14}: checkout: moving from 0215c352d201ac8924f6b1997c0a8835cdfd0f2f to master
+0215c35 HEAD@{15}: checkout: moving from master to 0215c35
+6481c5f HEAD@{16}: checkout: moving from master to master
+6481c5f HEAD@{17}: checkout: moving from 6481c5f8f471b33ce09ac5eec49af4e759868097 to master
+6481c5f HEAD@{18}: checkout: moving from master to 6481c5f8f471b33ce09ac5eec49af4e759868097
+6481c5f HEAD@{19}: checkout: moving from 0215c352d201ac8924f6b1997c0a8835cdfd0f2f to master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
