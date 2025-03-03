@@ -155,3 +155,38 @@ Successfully rebased and updated detached HEAD.
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
+## Challenge 6(Dropping a Commit)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Unwanted commit"
+[master 1915a89] Unwanted commit
+ 1 file changed, 14 insertions(+)
+ create mode 100644 unwanted.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i
+Successfully rebased and updated refs/heads/master.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --oneline
+1915a89 (HEAD -> master) Unwanted commit
+6481c5f (origin/master, origin/HEAD) Merge branch 'master' of https://github.com/pinsoegustave/thegym-gitadvanced
+4d25669 Part 1: Challenge 3
+9068135 Part 1: Challenge 2
+1601f3e readme: part 1 challenge
+db28a96 chore: Create another file
+1c7c0df chore: Create third and fourth files
+85afe0a chore: Create initial filee
+b11d68c readme: part 1 challenge
+267a47c chore: File 4 addition
+42ca4e1 chore: Create third and fourth files
+7209072 chore: Create another file
+9575e39 chore: Create initial file
+dcc74b6 add readme
+f5fedd1 Delete all
+5ee9077 Adding test 4 file
+4061313 chore: Create third and fourth files
+16129c3 chore: Create another file
+4325f3e chore: Create initial file
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reset --hard 1915a89
+HEAD is now at 1915a89 Unwanted commit
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reset --hard HEAD~1
+HEAD is now at 1d77f33 Part 1: Challenge 5
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
