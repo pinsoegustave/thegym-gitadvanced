@@ -55,3 +55,20 @@ isaac2@LEXs-MacBook-Air thegym-gitadvanced % git rebase --continue
 Successfully rebased and updated refs/heads/master.
 isaac2@LEXs-MacBook-Air thegym-gitadvanced % 
 ```
+
+## Challenge 3(Squashing Commits)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i  HEAD~5
+Successfully rebased and updated refs/heads/master.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i  HEAD~6
+[detached HEAD 85afe0a] chore: Create initial filee
+ Author: Gym Ituze <ntwalimudasubirag@gmail.com>
+ Date: Fri Feb 28 15:27:01 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.md
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/master.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i HEAD~6
+Successfully rebased and updated refs/heads/master.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
