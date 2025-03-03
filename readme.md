@@ -33,3 +33,25 @@ To https://github.com/pinsoegustave/thegym-gitadvanced.git
    dcc74b6..267a47c  master -> master
 Ituzes-iMac:thegym-gitadvanced gymituze$ 
 ```
+
+## Challenge 2(Editing Commit History):
+```isaac2@LEXs-MacBook-Air thegym-gitadvanced % git rebase -i HEAD~2
+Stopped at 267a47c...  chore: Create another file
+You can amend the commit now, with
+
+  git commit --amend 
+
+Once you are satisfied with your changes, run
+
+  git rebase --continue
+
+isaac2@LEXs-MacBook-Air thegym-gitadvanced % git commit --amend  
+[detached HEAD f40cb40] chore: Create another file
+ Author: Gym Ituze <ntwalimudasubirag@gmail.com>
+ Date: Fri Feb 28 15:28:32 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test4.md
+isaac2@LEXs-MacBook-Air thegym-gitadvanced % git rebase --continue
+Successfully rebased and updated refs/heads/master.
+isaac2@LEXs-MacBook-Air thegym-gitadvanced % 
+```
