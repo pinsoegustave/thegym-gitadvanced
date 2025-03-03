@@ -190,3 +190,11 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reset --hard HEAD~1
 HEAD is now at 1d77f33 Part 1: Challenge 5
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+## Challenge 7(Reordering Commits)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i
+Successfully rebased and updated refs/heads/master.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
+
