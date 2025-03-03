@@ -239,3 +239,112 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git cherry-pick 32f9ccc
  create mode 100644 test5.md
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+## Challenge 9(Visualizing Commit History<Bonus>)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --graph
+* commit 90799b6b5ce1800508e5b810b410e0990a51e3af (HEAD -> master)
+| Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| Date:   Mon Mar 3 17:11:48 2025 +0200
+| 
+|     Part 1 Challenge 8
+| 
+* commit 3b2b55f740ccfc74e588ffbb9b22270361785f13
+| Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| Date:   Mon Mar 3 17:05:39 2025 +0200
+| 
+|     Implemented test 5
+| 
+* commit 7eb4c3fab0e2da6b3d2d3c6946ccccf6c0e14aaf
+| Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| Date:   Mon Mar 3 16:49:13 2025 +0200
+| 
+|     Part 1 Challenge 7
+|   
+*   commit a70b08284f40cb009f6e1fde21a08df9056188ce (origin/master, origin/HEAD)
+|\  Merge: 6481c5f 0215c35
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 16:46:03 2025 +0200
+| | 
+| |     Merge commit '0215c352'
+| | 
+| * commit 0215c352d201ac8924f6b1997c0a8835cdfd0f2f
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 16:36:40 2025 +0200
+| | 
+| |     Part 1: Challenge 6
+| | 
+| * commit 1d77f33a597e61c2aa5d90c67ff402765ec8daf8
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 16:10:20 2025 +0200
+| | 
+| |     Part 1: Challenge 5
+| | 
+| * commit ae9c95ff4bf083eaab033204dd0dca5c3244223a
+| | Author: Gym Ituze <ntwalimudasubirag@gmail.com>
+| | Date:   Fri Feb 28 15:27:11 2025 +0200
+| | 
+| |     : Create third and fourth files
+| | 
+| * commit 18cf29deb9bf6bd9137fa76bcf6be4c76cb10904
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 15:54:08 2025 +0200
+| | 
+| |     Part 1: Challenge 4
+| | 
+| * commit 10b3fafa91eb17d1030d7f992908ab50ac489c01
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 15:50:55 2025 +0200
+| | 
+| |     Create third and fourth file
+| |   
+* |   commit 6481c5f8f471b33ce09ac5eec49af4e759868097
+|\ \  Merge: 4d25669 b11d68c
+| | | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | | Date:   Mon Mar 3 15:13:02 2025 +0200
+| | | 
+| | |     Merge branch 'master' of https://github.com/pinsoegustave/thegym-gitadvanced
+| | | 
+| * | commit b11d68c4bb29c15ed488332f44eeb70aea07427c
+| | | Author: Gym Ituze <ntwalimudasubirag@gmail.com>
+| | | Date:   Fri Feb 28 15:30:21 2025 +0200
+| | | 
+| | |     readme: part 1 challenge
+| | | 
+| | Date:   Mon Mar 3 16:10:20 2025 +0200
+| | 
+| |     Part 1: Challenge 5
+| | 
+| * commit ae9c95ff4bf083eaab033204dd0dca5c3244223a
+| | Author: Gym Ituze <ntwalimudasubirag@gmail.com>
+| | Date:   Fri Feb 28 15:27:11 2025 +0200
+| | 
+| |     : Create third and fourth files
+| | 
+| * commit 18cf29deb9bf6bd9137fa76bcf6be4c76cb10904
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 15:54:08 2025 +0200
+| | 
+| |     Part 1: Challenge 4
+| | 
+| * commit 10b3fafa91eb17d1030d7f992908ab50ac489c01
+| | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | Date:   Mon Mar 3 15:50:55 2025 +0200
+| | 
+| |     Create third and fourth file
+| |   
+* |   commit 6481c5f8f471b33ce09ac5eec49af4e759868097
+|\ \  Merge: 4d25669 b11d68c
+| | | Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+| | | Date:   Mon Mar 3 15:13:02 2025 +0200
+| | | 
+| | |     Merge branch 'master' of https://github.com/pinsoegustave/thegym-gitadvanced
+| | | 
+| * | commit b11d68c4bb29c15ed488332f44eeb70aea07427c
+| | | Author: Gym Ituze <ntwalimudasubirag@gmail.com>
+| | | Date:   Fri Feb 28 15:30:21 2025 +0200
+| | | 
+| | |     readme: part 1 challenge
+| | | 
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
