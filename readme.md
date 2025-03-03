@@ -142,3 +142,16 @@ f5fedd1 Delete all
 4325f3e chore: Create initial file
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+## Challenge 5(Advanced Squashing)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i HEAD~6
+[detached HEAD 10b3faf] Create third and fourth file
+ Date: Mon Mar 3 15:50:55 2025 +0200
+ 2 files changed, 74 insertions(+), 1 deletion(-)
+ rewrite readme.md (100%)
+ create mode 100644 test4.md
+Successfully rebased and updated detached HEAD.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
+
