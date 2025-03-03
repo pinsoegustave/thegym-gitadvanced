@@ -198,3 +198,44 @@ Successfully rebased and updated refs/heads/master.
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
+## Challenge 8(Cherry-Picking Commits)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch ft/branch
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/branch
+Switched to branch 'ft/branch'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ touch test5.md
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Implemented test 5"
+[ft/branch 32f9ccc] Implemented test 5
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test5.md
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --oneline
+32f9ccc (HEAD -> ft/branch) Implemented test 5
+7eb4c3f (master) Part 1 Challenge 7
+a70b082 (origin/master, origin/HEAD) Merge commit '0215c352'
+0215c35 Part 1: Challenge 6
+1d77f33 Part 1: Challenge 5
+ae9c95f : Create third and fourth files
+18cf29d Part 1: Challenge 4
+10b3faf Create third and fourth file
+6481c5f Merge branch 'master' of https://github.com/pinsoegustave/thegym-gitadvanced
+4d25669 Part 1: Challenge 3
+1c7c0df chore: Create third and fourth files
+9068135 Part 1: Challenge 2
+1601f3e readme: part 1 challenge
+db28a96 chore: Create another file
+85afe0a chore: Create initial filee
+b11d68c readme: part 1 challenge
+267a47c chore: File 4 addition
+42ca4e1 chore: Create third and fourth files
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git cherry-pick 32f9ccc
+[master 3b2b55f] Implemented test 5
+ Date: Mon Mar 3 17:05:39 2025 +0200
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test5.md
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
