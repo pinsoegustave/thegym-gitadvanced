@@ -1,6 +1,7 @@
 # Git Advanced Exercises Solutions
 
-## Part 1: Challenge 1(Missing File fix)
+## Part 1: Refining Git History
+### Challenge 1(Missing File fix)
 ```Ituzes-iMac:thegym-gitadvanced gymituze$ touch test{1..4}.md
 git add test1.md && git commit -m "chore: Create initial file"
 git add test2.md && git commit -m "chore: Create another file"
@@ -34,7 +35,7 @@ To https://github.com/pinsoegustave/thegym-gitadvanced.git
 Ituzes-iMac:thegym-gitadvanced gymituze$ 
 ```
 
-## Challenge 2(Editing Commit History):
+### Challenge 2(Editing Commit History):
 ```isaac2@LEXs-MacBook-Air thegym-gitadvanced % git rebase -i HEAD~2
 Stopped at 267a47c...  chore: Create another file
 You can amend the commit now, with
@@ -56,7 +57,7 @@ Successfully rebased and updated refs/heads/master.
 isaac2@LEXs-MacBook-Air thegym-gitadvanced % 
 ```
 
-## Challenge 3(Squashing Commits)
+### Challenge 3(Squashing Commits)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i  HEAD~5
 Successfully rebased and updated refs/heads/master.
@@ -73,7 +74,7 @@ Successfully rebased and updated refs/heads/master.
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 4(Splitting a Commit)
+### Challenge 4(Splitting a Commit)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i 1c7c0df
 The previous cherry-pick is now empty, possibly due to conflict resolution.
@@ -143,7 +144,7 @@ f5fedd1 Delete all
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 5(Advanced Squashing)
+### Challenge 5(Advanced Squashing)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i HEAD~6
 [detached HEAD 10b3faf] Create third and fourth file
@@ -155,7 +156,7 @@ Successfully rebased and updated detached HEAD.
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 6(Dropping a Commit)
+### Challenge 6(Dropping a Commit)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Unwanted commit"
@@ -191,14 +192,14 @@ HEAD is now at 1d77f33 Part 1: Challenge 5
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 7(Reordering Commits)
+### Challenge 7(Reordering Commits)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase -i
 Successfully rebased and updated refs/heads/master.
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 8(Cherry-Picking Commits)
+### Challenge 8(Cherry-Picking Commits)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch ft/branch
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/branch
@@ -240,7 +241,7 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git cherry-pick 32f9ccc
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 9(Visualizing Commit History<Bonus>)
+### Challenge 9(Visualizing Commit History<Bonus>)
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --graph
 * commit 90799b6b5ce1800508e5b810b410e0990a51e3af (HEAD -> master)
@@ -349,7 +350,7 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --graph
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
-## Challenge 10(Understanding Reflogs <Bonus>);
+### Challenge 10(Understanding Reflogs <Bonus>);
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reflog
 394c1fe (HEAD -> master) HEAD@{0}: commit: Part 1 Challenge 9
@@ -374,3 +375,6 @@ a70b082 (origin/master, origin/HEAD) HEAD@{9}: commit (merge): Merge commit '021
 6481c5f HEAD@{19}: checkout: moving from 0215c352d201ac8924f6b1997c0a8835cdfd0f2f to master
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+## Part 2: Branching Basics
+### Challenge 1: Feature Branch Creation
