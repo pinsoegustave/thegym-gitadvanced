@@ -384,3 +384,15 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-feature
 Switched to branch 'ft/new-feature'
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 2: Working on the Feature Branch
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-feature
+Switched to branch 'ft/new-feature'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Implemented core functionality for new feature"
+[ft/new-feature 75d78fe] Implemented core functionality for new feature
+ 1 file changed, 5 insertions(+)
+ create mode 100644 feature.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
