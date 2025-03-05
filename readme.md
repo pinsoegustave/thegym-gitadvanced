@@ -585,3 +585,56 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
   master
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 10: Checking Out Detached HEAD
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reflog
+993130f (HEAD -> master) HEAD@{0}: commit: readme: Part 2 Challenge 9
+3228246 (origin/master, origin/HEAD) HEAD@{1}: checkout: moving from ft/improved-branch-name to master
+346d1f4 (ft/improved-branch-name) HEAD@{2}: Branch: renamed refs/heads/ft/new-branch-from-commit to refs/heads/ft/improved-branch-name
+346d1f4 (ft/improved-branch-name) HEAD@{4}: checkout: moving from master to ft/new-branch-from-commit
+3228246 (origin/master, origin/HEAD) HEAD@{5}: commit: readme: Part 2 Challenge 8
+346d1f4 (ft/improved-branch-name) HEAD@{6}: checkout: moving from ft/new-branch-from-commit to master
+346d1f4 (ft/improved-branch-name) HEAD@{7}: rebase (finish): returning to refs/heads/ft/new-branch-from-commit
+346d1f4 (ft/improved-branch-name) HEAD@{8}: rebase (start): checkout master
+05aa503 HEAD@{9}: checkout: moving from master to ft/new-branch-from-commit
+346d1f4 (ft/improved-branch-name) HEAD@{10}: commit: readme: Part 2 Challenge 7
+1d9a380 HEAD@{11}: merge ft/new-branch-from-commit: Merge made by the 'recursive' strategy.
+5a7762d HEAD@{12}: checkout: moving from ft/new-branch-from-commit to master
+05aa503 HEAD@{13}: commit: new-branch: trial test
+d59ed8e HEAD@{14}: checkout: moving from master to ft/new-branch-from-commit
+5a7762d HEAD@{15}: commit: readme: Part 2 Challenge 6
+b62e850 HEAD@{16}: checkout: moving from ft/new-branch-from-commit to master
+d59ed8e HEAD@{17}: checkout: moving from master to ft/new-branch-from-commit
+b62e850 HEAD@{18}: commit: readme: Part 2 Challenge 5
+0d34880 HEAD@{19}: checkout: moving from ft/new-feature to master
+75d78fe HEAD@{20}: checkout: moving from master to ft/new-feature
+0d34880 HEAD@{21}: commit: Clean
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout 5a7762d
+Note: switching to '5a7762d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5a7762d readme: Part 2 Challenge 6
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git switch --detach 5a7762d
+HEAD is now at 5a7762d readme: Part 2 Challenge 6
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Previous HEAD position was 5a7762d readme: Part 2 Challenge 6
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
