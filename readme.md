@@ -569,3 +569,19 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase ft/new-branch-from-commit
 Current branch master is up to date.
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$
 ```
+
+### Challenge 9: Renaming Branches
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+  ft/new-branch-from-commit
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch -m ft/new-branch-from-commit ft/improved-branch-name
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+* ft/improved-branch-name
+  master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
