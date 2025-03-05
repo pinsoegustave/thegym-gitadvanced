@@ -526,3 +526,46 @@ Merge made by the 'recursive' strategy.
  1 file changed, 1 insertion(+)
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 8: Branch Rebasing
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+  ft/new-branch-from-commit
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase master
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --online
+fatal: unrecognized argument: --online
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git log --oneline
+346d1f4 (HEAD -> master, ft/new-branch-from-commit) readme: Part 2 Challenge 7
+1d9a380 Test merging branches
+05aa503 new-branch: trial test
+5a7762d readme: Part 2 Challenge 6
+b62e850 readme: Part 2 Challenge 5
+0d34880 Clean
+d59ed8e Part 2: Challenge 4
+827b611 (origin/master, origin/HEAD) Merge branch 'ft/new-feature'
+f5c2961 Part 2: Challenge 3
+1cc4b94 Updated project readme
+b76e1b4 Part 2: Challenge 2
+75d78fe Implemented core functionality for new feature
+ab56aa5 Part 2: Challenge 1
+26152cf readme: Edit
+f0a8088 Part 1 Challenge 10
+394c1fe Part 1 Challenge 9
+90799b6 Part 1 Challenge 8
+3b2b55f Implemented test 5
+7eb4c3f Part 1 Challenge 7
+a70b082 Merge commit '0215c352'
+0215c35 Part 1: Challenge 6
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git rebase ft/new-branch-from-commit
+Current branch master is up to date.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$
+```
