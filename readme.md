@@ -378,3 +378,9 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$
 
 ## Part 2: Branching Basics
 ### Challenge 1: Feature Branch Creation
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch ft/new-feature
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-feature
+Switched to branch 'ft/new-feature'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
