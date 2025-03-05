@@ -444,3 +444,35 @@ To https://github.com/pinsoegustave/thegym-gitadvanced.git
    26152cf..827b611  master -> master
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$
 ```
+### Challenge 5: Branch Deletion
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+  ft/new-feature
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-feature
+error: Your local changes to the following files would be overwritten by checkout:
+        readme.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Clean"
+[master 0d34880] Clean
+ 1 file changed, 1 deletion(-)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-feature
+Switched to branch 'ft/new-feature'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git status
+On branch ft/new-feature
+nothing to commit, working tree clean
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch -D ft/new-feature
+Deleted branch ft/new-feature (was 75d78fe).
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+* master
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
