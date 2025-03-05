@@ -396,3 +396,13 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Implemented core func
  create mode 100644 feature.txt
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 3: Switching Back and Making More Changes
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Updated project readme"
+[master 1cc4b94] Updated project readme
+ 1 file changed, 14 insertions(+)
+ create mode 100644 read.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
