@@ -505,3 +505,24 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout -b ft/new-branch-from-c
 Switched to a new branch 'ft/new-branch-from-commit'
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 7: Branch Merging
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge ft/new-branch-from-commit
+Already up to date.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "new-branch: trial test"
+[ft/new-branch-from-commit 05aa503] new-branch: trial test
+ 1 file changed, 1 insertion(+)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge ft/new-branch-from-commit
+Merge made by the 'recursive' strategy.
+ test4.md | 1 +
+ 1 file changed, 1 insertion(+)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
