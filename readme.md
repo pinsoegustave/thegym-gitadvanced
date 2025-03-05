@@ -476,3 +476,32 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
 * master
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 6: Creating a Branch from a Commit
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reflog
+b62e850 (HEAD -> master) HEAD@{0}: commit: readme: Part 2 Challenge 5
+0d34880 HEAD@{1}: checkout: moving from ft/new-feature to master
+75d78fe HEAD@{2}: checkout: moving from master to ft/new-feature
+0d34880 HEAD@{3}: commit: Clean
+d59ed8e HEAD@{4}: commit: Part 2: Challenge 4
+827b611 (origin/master, origin/HEAD) HEAD@{5}: merge ft/new-feature: Merge made by the 'recursive' strategy.
+f5c2961 HEAD@{6}: checkout: moving from ft/new-feature to master
+75d78fe HEAD@{7}: checkout: moving from master to ft/new-feature
+f5c2961 HEAD@{8}: commit: Part 2: Challenge 3
+1cc4b94 HEAD@{9}: commit: Updated project readme
+b76e1b4 HEAD@{10}: commit: Part 2: Challenge 2
+ab56aa5 HEAD@{11}: checkout: moving from ft/new-feature to master
+75d78fe HEAD@{12}: commit: Implemented core functionality for new feature
+26152cf HEAD@{13}: checkout: moving from master to ft/new-feature
+ab56aa5 HEAD@{14}: commit: Part 2: Challenge 1
+26152cf HEAD@{15}: checkout: moving from ft/new-feature to master
+26152cf HEAD@{16}: checkout: moving from master to ft/new-feature
+26152cf HEAD@{17}: checkout: moving from ft/new-feature to master
+f9f5c71 HEAD@{18}: checkout: moving from master to ft/new-feature
+26152cf HEAD@{19}: checkout: moving from master to master
+26152cf HEAD@{20}: checkout: moving from ft/new-feature to master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout -b ft/new-branch-from-commit d59ed8e
+Switched to a new branch 'ft/new-branch-from-commit'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
