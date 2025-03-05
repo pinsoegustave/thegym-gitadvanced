@@ -406,3 +406,42 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Updated project readm
  create mode 100644 read.txt
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 4: Local vs. Remote Branches
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git reflog
+f9f5c71 (HEAD -> ft/new-feature) HEAD@{0}: checkout: moving from master to ft/new-feature
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git remote -v
+origin  https://github.com/pinsoegustave/thegym-gitadvanced.git (fetch)
+origin  https://github.com/pinsoegustave/thegym-gitadvanced.git (push)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+  ft/new-feature
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/new-feature
+Switched to branch 'ft/new-feature'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git status
+On branch ft/new-feature
+nothing to commit, working tree clean
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge ft/new-feature
+Merge made by the 'recursive' strategy.
+ feature.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 feature.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git push origin master
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 5.18 KiB | 2.59 MiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 1 local object.
+To https://github.com/pinsoegustave/thegym-gitadvanced.git
+   26152cf..827b611  master -> master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$
+```
+
