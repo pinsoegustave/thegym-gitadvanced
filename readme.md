@@ -821,3 +821,11 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "merge using mergetool
 [master 0bd4b61] merge using mergetool
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 5: Ignoring Files/Directories
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ touch .gitignore
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ echo "/tmp" > .gitignore
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$
+```
+
