@@ -674,3 +674,53 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Dropped refs/stash@{0} (ad75991b655c9980ec9e79a96b1a62a7515254b3)
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+### Challenge 3: Branch Merging Conflicts(Continued)
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+  ft/improved-branch-name
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/improved-branch-name
+M       feature.txt
+Switched to branch 'ft/improved-branch-name'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "feature: edit line 7"
+[ft/improved-branch-name 6bb28ac] feature: edit line 7
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge improved-branch-name
+merge: improved-branch-name - not something we can merge
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge improved-branch-name
+merge: improved-branch-name - not something we can merge
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/improved-branch-name
+Switched to branch 'ft/improved-branch-name'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git status
+On branch ft/improved-branch-name
+nothing to commit, working tree clean
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git push origin ft/improved-branch-name
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1007 bytes | 1007.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/improved-branch-name' on GitHub by visiting:
+remote:      https://github.com/pinsoegustave/thegym-gitadvanced/pull/new/ft/improved-branch-name
+remote: 
+To https://github.com/pinsoegustave/thegym-gitadvanced.git
+ * [new branch]      ft/improved-branch-name -> ft/improved-branch-name
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge ft/improved-branch-name
+Merge made by the 'recursive' strategy.
+ feature.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$
+```
