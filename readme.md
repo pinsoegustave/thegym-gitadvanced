@@ -638,3 +638,20 @@ Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+## Part 3: Advanced Workflows
+
+### Challenge 1: Stashing Changes
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git stash
+Saved working directory and index state WIP on master: f0ef1b2 readme: Part 2 Challenge 10
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git stash list
+stash@{0}: WIP on master: f0ef1b2 readme: Part 2 Challenge 10
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
