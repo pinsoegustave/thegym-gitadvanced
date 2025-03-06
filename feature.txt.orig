@@ -7,4 +7,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 This line is being modified trying to learn merging conflicts
 
 
+<<<<<<< HEAD
+higgiii haggaa
+=======
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+>>>>>>> ft/improved-branch-name
