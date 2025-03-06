@@ -655,3 +655,22 @@ Your branch is up to date with 'origin/master'.
 nothing to commit, working tree clean
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 2: Retrieving Stashed Changes
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git stash list
+stash@{0}: WIP on master: f0ef1b2 readme: Part 2 Challenge 10
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git stash pop
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   feature.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (ad75991b655c9980ec9e79a96b1a62a7515254b3)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
