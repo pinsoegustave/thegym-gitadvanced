@@ -724,3 +724,100 @@ Merge made by the 'recursive' strategy.
  1 file changed, 3 insertions(+), 1 deletion(-)
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$
 ```
+
+### Challenge 4: Resolving Merge Conflicts with a Merge Tool
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git branch
+  ft/branch
+  ft/improved-branch-name
+* master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/improved-branch-name
+M       feature.txt
+Switched to branch 'ft/improved-branch-name'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "feature: edit line 7"
+[ft/improved-branch-name 6bb28ac] feature: edit line 7
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge improved-branch-name
+merge: improved-branch-name - not something we can merge
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge improved-branch-name
+merge: improved-branch-name - not something we can merge
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/improved-branch-name
+Switched to branch 'ft/improved-branch-name'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git status
+On branch ft/improved-branch-name
+nothing to commit, working tree clean
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git push origin ft/improved-branch-name
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1007 bytes | 1007.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/improved-branch-name' on GitHub by visiting:
+remote:      https://github.com/pinsoegustave/thegym-gitadvanced/pull/new/ft/improved-branch-name
+remote: 
+To https://github.com/pinsoegustave/thegym-gitadvanced.git
+ * [new branch]      ft/improved-branch-name -> ft/improved-branch-name
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout ft/improved-branch-name
+Switched to branch 'ft/improved-branch-name'
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Edit in feature"
+[ft/improved-branch-name c8a048f] Edit in feature
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git push origin ft/improved-branch-name
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 421 bytes | 421.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pinsoegustave/thegym-gitadvanced.git
+   6bb28ac..c8a048f  ft/improved-branch-name -> ft/improved-branch-name
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "on master: edit feature file"
+[master feb145a] on master: edit feature file
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git merge ft/improved-branch-name
+Auto-merging feature.txt
+CONFLICT (content): Merge conflict in feature.txt
+Automatic merge failed; fix conflicts and then commit the result.
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff nvimdiff
+Merging:
+feature.txt
+
+Normal merge conflict for 'feature.txt':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff): 
+4 files to edit
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ y
+bash: y: command not found
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git git add .
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "merge using mergetool"
+[master 0bd4b61] merge using mergetool
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
