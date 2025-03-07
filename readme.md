@@ -833,3 +833,41 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ echo "/tmp" > .gitignore
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$
 ```
 
+### Challenge 7, 8: Working with tags, listing and deleting tags
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag v1.0
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag
+v1.0
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git show
+commit 8768992a1bf0e54efcedfb98d2875123d8bbe636 (HEAD -> master, tag: v1.0, origin/master, origin/HEAD)
+Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+Date:   Fri Mar 7 14:14:14 2025 +0200
+
+commit 8768992a1bf0e54efcedfb98d2875123d8bbe636 (HEAD -> master, tag: v1.0, origin/master, origin/HEAD)
+Author: pinsoegustave <ntwalimudasubirag@gmail.com>
+Date:   Fri Mar 7 14:14:14 2025 +0200
+
+    readme: Part 3 Challenge 5
+
+diff --git a/readme.md b/readme.md
+index c2e024e..abb2ae3 100644
+--- a/readme.md
++++ b/readme.md
+@@ -821,8 +821,12 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "merge using mergetool
+ [master 0bd4b61] merge using mergetool
+ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+ ```
++### Challenge 5: Understanding Detached HEAD State
++```
++https://circleci.com/blog/git-detached-head-state/#:~:text=git%20checkout%20feature-,What%20does%20detached%20HEAD%20mean%3F,commit%20or%20the%20remote%20rep
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag show v1.0
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag
+show
+v1.0
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag -d v1.0
+Deleted tag 'v1.0' (was 8768992)
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag
+show
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
+
