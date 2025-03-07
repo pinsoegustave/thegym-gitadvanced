@@ -895,3 +895,16 @@ To https://github.com/pinsoegustave/thegym-gitadvanced.git
    8768992..c239f8a  master -> master
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+
+### Challenge 10: Pulling Changes from Remote Repositories
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git pull origin master
+From https://github.com/pinsoegustave/thegym-gitadvanced
+ * branch            master     -> FETCH_HEAD
+Updating cc0484b..5873ca8
+Fast-forward
+ remote-file | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 remote-file
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$
+```
