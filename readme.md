@@ -857,8 +857,8 @@ index c2e024e..abb2ae3 100644
  [master 0bd4b61] merge using mergetool
  LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
  ```
-+### Challenge 5: Understanding Detached HEAD State
-+```
+### Challenge 5: Understanding Detached HEAD State
+```+
 +https://circleci.com/blog/git-detached-head-state/#:~:text=git%20checkout%20feature-,What%20does%20detached%20HEAD%20mean%3F,commit%20or%20the%20remote%20rep
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag show v1.0
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git tag
@@ -871,3 +871,27 @@ show
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
 
+### Challenge 9: Pushing Local Work to Remote Repositories
+```
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ rm feature.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ rm read.text
+rm: read.text: No such file or directory
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ rm read.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git add .
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "Clean the files"
+[master c239f8a] Clean the files
+ 2 files changed, 24 deletions(-)
+ delete mode 100644 feature.txt
+ delete mode 100644 read.txt
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.32 KiB | 337.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/pinsoegustave/thegym-gitadvanced.git
+   8768992..c239f8a  master -> master
+LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
+```
