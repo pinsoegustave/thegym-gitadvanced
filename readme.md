@@ -821,8 +821,12 @@ LEXs-MacBook-Air:thegym-gitadvanced isaac2$ git commit -m "merge using mergetool
 [master 0bd4b61] merge using mergetool
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ 
 ```
+### Challenge 5: Understanding Detached HEAD State
+```
+https://circleci.com/blog/git-detached-head-state/#:~:text=git%20checkout%20feature-,What%20does%20detached%20HEAD%20mean%3F,commit%20or%20the%20remote%20repository.
+``` 
 
-### Challenge 5: Ignoring Files/Directories
+### Challenge 6: Ignoring Files/Directories
 ```
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ touch .gitignore
 LEXs-MacBook-Air:thegym-gitadvanced isaac2$ echo "/tmp" > .gitignore
